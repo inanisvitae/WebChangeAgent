@@ -2,6 +2,7 @@
 This is the frontend of the detector. It shows the diffs between versions of website with git style UI.
 
 ## Instruction
+git clone https://github.com/inanisvitae/WebChangeAgent.git <br />
 ### Development build
 yarn <br />
 yarn start <br />
