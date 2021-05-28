@@ -18,7 +18,8 @@ const headingStyles = {
 const IndexPage = () => {
   const [state, setState] = useState({
     data: null,
-    
+    url: null,
+    latestContent: null
   });
   useEffect(() => {
     if (state.data) {
@@ -26,12 +27,18 @@ const IndexPage = () => {
     }
     axios.post('http://localhost:3000/get').then((ele) => {
       const { data: {
-        result,
+        result: {
+          diff,
+          url,
+          latestContent,
+        },
       } } = ele;
-      const outputHtml = Diff2Html.html(result, { drawFileList: true, matching: 'lines', outputFormat: 'side-by-side' });
+      const outputHtml = Diff2Html.html(diff, { drawFileList: true, matching: 'lines', outputFormat: 'side-by-side' });
       setState({
         ...state,
         data: outputHtml,
+        url,
+        latestContent,
       });
       return null;
     });
@@ -45,7 +52,12 @@ const IndexPage = () => {
       </h1>
       <div dangerouslySetInnerHTML={{__html: state.data}}>
       </div>
-      
+      <h3>Url</h3>
+      <p>{state.url}</p>
+      <h3>Latest Content</h3>
+      <p>{state.latestContent}</p>
+      <h3>Request to monitor a new website</h3>
+      <input/>
       <button>
         Request
       </button>
