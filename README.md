@@ -10,3 +10,11 @@ yarn start <br />
 yarn <br />
 yarn build <br />
 yarn serve <br />
+
+### Deployed instance
+It is deployed on <br />
+https://changedetectorfrontend.herokuapp.com/
+
+### Server
+Server is deployed on <br />
+https://changedetectorserver.herokuapp.com/

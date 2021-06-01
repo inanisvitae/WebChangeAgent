@@ -15,7 +15,7 @@ const headingStyles = {
   marginBottom: 64,
   maxWidth: 500,
 }
-let URL = 'http://localhost.com:3000';
+let URL = 'http://localhost:3000';
 
 if (process.env.NODE_ENV === 'production') {
   URL = 'https://changedetectorserver.herokuapp.com';
@@ -138,8 +138,8 @@ const IndexPage = () => {
       </div>
       <h3>Current Url and Dates</h3>
       <span>{decodeURIComponent(selectedUrl)}</span><br />
-      <p>Start Date</p><p>{dateFormatter(dateDual[0])}</p>
-      <p>End Date</p><p>{dateFormatter(dateDual[1])}</p>
+      <p>Start Date</p><p>{dateDual[0] === '*' ? '*' : dateFormatter(dateDual[0])}</p>
+      <p>End Date</p><p>{dateDual[1] === '*' ? '*' : dateFormatter(dateDual[1])}</p>
       <button onClick={e => getPatch()}>Patch</button>
       <h3>Url</h3>
       <p>{url}</p>
