@@ -16,9 +16,7 @@ const headingStyles = {
   maxWidth: 500,
 }
 let URL = 'http://localhost.com:3000';
-console.log(process.env.BUILDING_PLATFORM);
-console.log('here...');
-console.log(process.env.NODE_ENV);
+
 if (process.env.NODE_ENV === 'production') {
   URL = 'https://changedetectorserver.herokuapp.com';
 }
