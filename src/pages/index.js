@@ -15,8 +15,10 @@ const headingStyles = {
   marginBottom: 64,
   maxWidth: 500,
 }
-
-const URL = 'https://changedetectorserver.herokuapp.com/';
+let URL = 'http://localhost.com:3000';
+if (process.env.BUILDING_PLATFORM === 'HEROKU') {
+  URL = 'https://changedetectorserver.herokuapp.com';
+}
 
 const IndexPage = () => {
   const [dir, setDir] = useState();
