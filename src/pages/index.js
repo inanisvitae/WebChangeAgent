@@ -16,6 +16,8 @@ const headingStyles = {
   maxWidth: 500,
 }
 
+const URL = 'https://changedetectorserver.herokuapp.com/';
+
 const IndexPage = () => {
   const [dir, setDir] = useState();
   const [data, setData] = useState('');
@@ -24,7 +26,7 @@ const IndexPage = () => {
   const [selectedUrl, setSelectedUrl] = useState('');
   const [dateDual, setDateDual] = useState(['*', '*']);
   useEffect(() => {
-    axios.post('http://localhost:3000/directory').then((resp) => {
+    axios.post(`${URL}/directory`).then((resp) => {
       const {
         data: {
           result: dir
@@ -88,7 +90,7 @@ const IndexPage = () => {
   const getPatch = () => {
     if (dateDual[0] !== '*' && dateDual[1] !== '*') {
       setIsLoading(true);
-      axios.post('http://localhost:3000/get', {
+      axios.post(`${URL}/get`, {
         dates: {
           startDate: dateDual[0],
           endDate: dateDual[1],
@@ -110,7 +112,7 @@ const IndexPage = () => {
 
   const changeMonitoringUrl = () => {
     setIsLoading(true);
-    axios.post('http://localhost:3000/config', {
+    axios.post(`${URL}/config`, {
       url,
     }).then((resp) => {
       console.log('Set a new url to monitor', resp);
