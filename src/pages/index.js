@@ -36,7 +36,6 @@ const IndexPage = () => {
         },
       } = resp;
       setDir(dir);
-      // setIsLoading(false);
     }).then(() => {
       axios.post(`${URL}/config`).then((resp) => {
         const {
@@ -49,7 +48,7 @@ const IndexPage = () => {
         setUrl(url);
         setIsLoading(false);
       })
-    })
+    }).catch()
   }, []);
 
   const selectDate = (dateStr) => {
