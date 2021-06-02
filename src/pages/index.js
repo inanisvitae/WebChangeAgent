@@ -146,9 +146,9 @@ const IndexPage = () => {
         Web Content Changes Detection
       </h1>
       <h2>Instructions</h2>
-      <h3>1. The server monitors www.cnbc.com by default. It's a news website so it's subject to ver frequent Changes.</h3>
+      <h3>1. The server monitors www.cnbc.com by default. It's a news website so it's subject to very frequent changes.</h3>
       <h3>
-        2. The buttons under each urls represent one archive or snapshot of the website in different dates.
+        2. The buttons under each url represent one archive or snapshot of the website with the timestamp.
       </h3>
       <h3>
         3. Select two archives by clicking two buttons, then these two dates will be shown in start date and end date.
