@@ -145,6 +145,20 @@ const IndexPage = () => {
       <h1 style={headingStyles}>
         Web Content Changes Detection
       </h1>
+      <h2>Instructions</h2>
+      <h3>1. The server monitors www.cnbc.com by default. It's a news website so it's subject to ver frequent Changes.</h3>
+      <h3>
+        2. The buttons under each urls represent one archive or snapshot of the website in different dates.
+      </h3>
+      <h3>
+        3. Select two archives by clicking two buttons, then these two dates will be shown in start date and end date.
+      </h3>
+      <h3>
+        4. Patch button generates differences between selected archives. 
+      </h3>
+      <h3>
+        5. Results are shown in diffs. All html files are beautified.
+      </h3>
       <div dangerouslySetInnerHTML={{__html: data}}>
       </div>
       <h3>Current Url and Dates</h3>

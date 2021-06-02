@@ -17,7 +17,8 @@ yarn serve <br />
 
 ### Deployed instance
 It is deployed on <br />
-https://changedetectorfrontend.herokuapp.com/
+https://changedetectorfrontend.herokuapp.com/ <br />
+Initial loading can take some time because heroku puts apps to sleep after some minutes.
 
 ### Server
 Server is deployed on <br />
