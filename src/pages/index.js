@@ -36,7 +36,19 @@ const IndexPage = () => {
         },
       } = resp;
       setDir(dir);
-      setIsLoading(false);
+      // setIsLoading(false);
+    }).then(() => {
+      axios.post(`${URL}/config`).then((resp) => {
+        const {
+          data: {
+            result: url
+          }
+        } = resp;
+        console.log(url);
+        
+        setUrl(url);
+        setIsLoading(false);
+      })
     })
   }, []);
 

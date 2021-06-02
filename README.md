@@ -3,6 +3,10 @@ This is the frontend of the detector. It shows the diffs between versions of web
 
 ## Instruction
 git clone https://github.com/inanisvitae/WebChangeAgent.git <br />
+
+### Description
+
+
 ### Development build
 yarn <br />
 yarn start <br />
