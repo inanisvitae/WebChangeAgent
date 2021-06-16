@@ -23,3 +23,6 @@ Initial loading can take some time because heroku puts apps to sleep after some 
 ### Server
 Server is deployed on <br />
 https://changedetectorserver.herokuapp.com/
+
+
+### TODO: the objective of the project, method, tools, and outcomes
