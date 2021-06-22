@@ -53,7 +53,7 @@ Go to https://changedetectorfrontend.herokuapp.com/. It should start the monitor
 ## 2
 After one more minute, a new button shows up with a new timestamp.
 
-[alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot4.png?raw=true)
+![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot4.png?raw=true)
 
 ## 3
 <br />
