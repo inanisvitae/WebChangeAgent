@@ -50,13 +50,16 @@ Go to https://changedetectorfrontend.herokuapp.com/. It should start the monitor
 
 <br />
 After one more minute, a new button shows up with a new timestamp.
-![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot4.png?raw=true)
+
+[alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot4.png?raw=true)
 
 <br />
 Then click these two buttons or any other random two buttons. The timestamps are in the order.
+
 ![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot3.png?raw=true)
 <br />
 Then click patch button. Server should return the patch for selected dates. 
+
 ![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot2.png?raw=true)
 ![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot1.png?raw=true)
 First patch is slow, but later it is cached, so server responds quickly.
