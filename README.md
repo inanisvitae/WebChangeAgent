@@ -43,3 +43,20 @@ For backend, express.js is used.
 ### Outcomes
 The application is deployed on https://changedetectorfrontend.herokuapp.com/. As shown, the result 
 accurately reflects the changes made to the website.
+### Steps
+## 1
+Go to https://changedetectorfrontend.herokuapp.com/. It should start the monitoring. A new button with the timestamp shows up as shown here.
+![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot5.png?raw=true)
+
+<br />
+After one more minute, a new button shows up with a new timestamp.
+![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot4.png?raw=true)
+
+<br />
+Then click these two buttons or any other random two buttons. The timestamps are in the order.
+![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot3.png?raw=true)
+<br />
+Then click patch button. Server should return the patch for selected dates. 
+![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot2.png?raw=true)
+![alt text](https://github.com/inanisvitae/WebChangeAgent/blob/main/docs/screenshots/Screenshot1.png?raw=true)
+First patch is slow, but later it is cached, so server responds quickly.
